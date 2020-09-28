@@ -7,7 +7,41 @@
 </head>
 <body>
     <form action="http://localhost/pemrogramanweb/proses.php" method="post">
-     
+     <html lang="en">
+   <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost/pemrogramanweb/proses.php" method="post">
+
+    <form action="http://localhost/pemrogramanweb/proses.php" method="GET">
+     <div class="kalkulator">
+         <h2 class="judul">KALKULATOR</h2>
+		<form method="GET" action="index.php">			
+			<input type="text" name="bilangan1" class="bilangan" autocomplete="off" placeholder="Masukkan Bilangan Pertama">
+			<input type="text" name="bilangan2" class="bil" autocomplete="off" placeholder="Masukkan Bilangan Kedua">
+			<select class="opt" name="operasi">
+				<option value="tambah">+</option>
+				<option value="kurang">-</option>
+				<option value="kali">x</option>
+				<option value="bagi">/</option>
+			</select>
+			<input type="submit" name="hitung" value="Hitung" class="tombol">											
+		</form>
+		<?php if(isset($_GET['hitung'])){ ?>
+			<input type="text" value="<?php echo $hasil; ?>" class="bil">
+		<?php }else{ ?>
+			<input type="text" value="0" class="bil">
+		<?php } ?>			
+	</div>
+    </form>
+</body>
+</html>
+</body>
+</html>
     </form>
 </body>
 </html>
